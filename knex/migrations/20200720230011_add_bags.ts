@@ -6,6 +6,10 @@ export const up = (knex: Knex): Promise<void> =>
     table.increments();
     table.timestamps();
     table.integer('volume');
+    table.integer('title');
+    table.integer('payloadVolume');
+    table.integer('availableVolume');
+    table.integer('cuboids');
   });
 
 export const down = (knex: Knex): Promise<void> =>

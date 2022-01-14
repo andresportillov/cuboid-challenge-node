@@ -11,6 +11,9 @@ router
   .post('/bags', bags.create)
   .get('/cuboids', cuboids.list)
   .get('/cuboids/:id', cuboids.get)
-  .post('/cuboids', cuboids.create);
+  .post('/cuboids', cuboids.create)
+  .post('/cuboids/:id', cuboids.update)
+  .post('/cuboids/delete/:id', cuboids.cuboid_delete);
+  
 
 export default router;
